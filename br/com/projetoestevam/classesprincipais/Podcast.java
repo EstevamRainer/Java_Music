@@ -59,6 +59,13 @@ public class Podcast extends Audio implements Participantes{
         System.out.println("A duração desse Podcast é de " + getDuracao() + " minutos!");
         System.out.println("A quantidade de visualizações para com esse Podcast é de " + getTotalDeReproducoes());
         System.out.println("A nota desse Podcast é de " + mediaClassificacoes() + ", com o total de pessoas votando de " + totalClassificacoes + "\n");
+        if(mediaClassificacoes() >= 4){
+            System.out.println("Esse Podcast é favorito pelos internautas!!");
+        } else if (mediaClassificacoes() >= 2) {
+            System.out.println("Podcast muito bom mesmo, recomendado");
+        } else {
+            System.out.println("Adicione esse Podcast em sua lista de 'Escutar Depois'");
+        }
     }
 }
 

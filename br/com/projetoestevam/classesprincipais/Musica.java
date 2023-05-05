@@ -51,6 +51,11 @@ public class Musica extends Audio implements Participantes{
         System.out.println("O cantor/a dessa música é " + cantor);
         System.out.println("A duração dessa música é de " + getDuracao() + " minutos");
         System.out.println("O total de visualizações é de " + getTotalDeReproducoes() + " visualizações. A música ja conta com " + curtidas + " likes!!! \n");
+        if (curtidas >= 500){
+            System.out.println("Música amada pelo público.");
+        } else {
+            System.out.println("Adicione-a para a ouvir depois!");
+        }
 
 
     }
