@@ -1,6 +1,6 @@
 package br.com.projetoestevam.classesprincipais;
 
-public class Musica extends Audio implements Participantes{
+public class Musica extends Audio implements Informacoes {
     private int curtidas;
     private String cantor;
     private String album;
@@ -50,11 +50,11 @@ public class Musica extends Audio implements Participantes{
         System.out.println("O nome da Música escolhida é " + getTitulo() + " que está no album " + getAlbum() + ". O gênero dessa música é: " +  getGenero());
         System.out.println("O cantor/a dessa música é " + cantor);
         System.out.println("A duração dessa música é de " + getDuracao() + " minutos");
-        System.out.println("O total de visualizações é de " + getTotalDeReproducoes() + " visualizações. A música ja conta com " + curtidas + " likes!!! \n");
+        System.out.println("O total de visualizações é de " + getTotalDeReproducoes() + " visualizações. A música ja conta com " + curtidas + " likes!!!");
         if (curtidas >= 500){
-            System.out.println("Música amada pelo público.");
+            System.out.println("Música amada pelo público.\n");
         } else {
-            System.out.println("Adicione-a para a ouvir depois!");
+            System.out.println("Adicione-a para a ouvir depois!\n");
         }
 
 

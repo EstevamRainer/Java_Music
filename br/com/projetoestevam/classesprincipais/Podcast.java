@@ -1,6 +1,6 @@
 package br.com.projetoestevam.classesprincipais;
 
-public class Podcast extends Audio implements Participantes{
+public class Podcast extends Audio implements Informacoes {
     private int totalClassificacoes;
     private double classificacoes;
     private String participantes;
@@ -58,13 +58,13 @@ public class Podcast extends Audio implements Participantes{
         System.out.println("--------------------------------------------------------------------------------------------------");
         System.out.println("A duração desse Podcast é de " + getDuracao() + " minutos!");
         System.out.println("A quantidade de visualizações para com esse Podcast é de " + getTotalDeReproducoes());
-        System.out.println("A nota desse Podcast é de " + mediaClassificacoes() + ", com o total de pessoas votando de " + totalClassificacoes + "\n");
+        System.out.println("A nota desse Podcast é de " + mediaClassificacoes() + ", com o total de pessoas votando de " + totalClassificacoes);
         if(mediaClassificacoes() >= 4){
             System.out.println("Esse Podcast é favorito pelos internautas!!");
         } else if (mediaClassificacoes() >= 2) {
-            System.out.println("Podcast muito bom mesmo, recomendado");
+            System.out.println("Podcast muito bom mesmo, recomendado\n");
         } else {
-            System.out.println("Adicione esse Podcast em sua lista de 'Escutar Depois'");
+            System.out.println("Adicione esse Podcast em sua lista de 'Ouvir Depois'\n");
         }
     }
 }

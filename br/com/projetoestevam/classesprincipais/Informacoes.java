@@ -1,5 +1,5 @@
 package br.com.projetoestevam.classesprincipais;
 
-public interface Participantes {
+public interface Informacoes {
     public void printDasInformacoes();
 }
